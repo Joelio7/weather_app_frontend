@@ -341,8 +341,6 @@
   background: -ms-linear-gradient(-45deg, #7696cd 0%, #8fb2e4 15%, #b0cff0 33%, #d7e5ec 69%, #dee0e7 92%);
   /* W3C */
   background: linear-gradient(135deg, #7696cd 0%, #8fb2e4 15%, #b0cff0 33%, #d7e5ec 69%, #dee0e7 92%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .gradient.seafoam-sun {
   /* Old browsers */
@@ -441,6 +439,12 @@
   background: linear-gradient(135deg, #0f124a 0%, #1b2360 16%, #515b80 42%, #758391 58%, #e5e3b0 100%);
 }
 .gradient.mountain-time {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;  
+  height: 100%;
+  width: 100%;
   /* Old browsers */
   background: #889db6;
   /* FF3.6+ */
@@ -455,6 +459,7 @@
   background: -ms-linear-gradient(-45deg, #889db6 0%, #a5b8ce 20%, #c1cfdd 42%, #dee1e4 81%, #d5d1cf 100%);
   /* W3C */
   background: linear-gradient(135deg, #889db6 0%, #a5b8ce 20%, #c1cfdd 42%, #dee1e4 81%, #d5d1cf 100%);
+
 }
 .gradient.candy-day {
   /* Old browsers */

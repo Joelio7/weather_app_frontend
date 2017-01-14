@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 body {
@@ -114,9 +114,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.wi-day-sunny {
+.wi-cloudy {
     font-size: 75px;
-    color: yellow;
+    color: grey;
     margin-top: 15px;
     margin-bottom: 5px;
 }
@@ -203,10 +203,183 @@ tr {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #fbe602;
   margin: 7em auto;
   padding: 7em;
-  box-shadow: 0 0 60px 30px #fbe602, 0 0 100px 60px #fff, 0 0 140px 90px #fbe602;
   margin-left: 92%;
   margin-top: -7%;
+}
+
+/* CLOUDS */
+
+.cloud{
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -30px;
+  background: #FFFFFF;
+  height: 150px;
+  width: 150px;
+  box-shadow: 
+    #FFFFFF -160px -20px 0 -30px,
+    #FFFFFF -180px -45px 0 -15px,  
+    #FFFFFF -75px -70px, 
+    #FFFFFF -230px 10px 0 -25px,
+    #FFFFFF -100px -40px,
+    #f7f1e7 -50px 30px,  
+    #f7f1e7 -150px 45px 0 -30px, 
+    #f7f1e7 -215px 15px 0 -15px, 
+    #f7f1e7 -5px 12.5px 0 5px;
+}
+
+#cloud1 {
+  animation: move 4s ease infinite;
+  top: 20%;
+  left: 10%;
+  z-index: -100;
+}
+
+#cloud2 {
+  animation: move 5s ease infinite;
+  top: 20%;
+  left: 25%;
+  z-index: -100;
+}
+
+#cloud3 {
+  animation: move 6s ease infinite;
+  top: 20%;
+  left: 40%;
+  z-index: -100;
+}
+
+#cloud4 {
+  animation: move 4s ease infinite;
+  top: 20%;
+  left: 55%;
+  z-index: -100;
+}
+
+#cloud5 {
+  animation: move 5s ease infinite;
+  top: 20%;
+  left: 70%;
+  z-index: -100;
+}
+
+#cloud6 {
+  animation: move 6s ease infinite;
+  top: 20%;
+  left: 85%;
+  z-index: 1;
+}
+
+#cloud7 {
+  animation: move 4s ease infinite;
+  top: 20%;
+  left:100%;
+  z-index: 1;
+}
+
+#cloud8 {
+  animation: move 5s ease infinite;
+  top: 0%;
+  left: 5%;
+  z-index: 3;
+}
+
+#cloud9 {
+  animation: move 6s ease infinite;
+  top: 0%;
+  left: 20%;
+  z-index: 3;
+}
+
+#cloud10 {
+  animation: move 4s ease infinite;
+  top: 0%;
+  left: 35%;
+  z-index: -1;
+}
+
+#cloud11 {
+  animation: move 5s ease infinite;
+  top: 0%;
+  left: 50%;
+  z-index: -1;
+}
+
+#cloud12 {
+  animation: move 6s ease infinite;
+  top: 0%;
+  left: 65%;
+  z-index: 3;
+}
+
+#cloud13 {
+  animation: move 4s ease infinite;
+  top: 0%;
+  left: 80%;
+  z-index: 3;
+}
+
+#cloud14 {
+  animation: move 5s ease infinite;
+  top: 0%;
+  left: 95%;
+  z-index: 3;
+}
+
+#cloud15 {
+  animation: move 6s ease infinite;
+  top: 7.5%;
+  left: 5%;
+  z-index: 2;
+}
+
+#cloud16 {
+  animation: move 4s ease infinite;
+  top: 7.5%;
+  left: 20%;
+  z-index: 2;
+}
+
+#cloud17 {
+  animation: move 5s ease infinite;
+  top: 7.5%;
+  left: 35%;
+  z-index: -2;
+}
+
+#cloud18 {
+  animation: move 6s ease infinite;
+  top: 7.5%;
+  left: 50%;
+  z-index: -2;
+}
+
+#cloud19 {
+  animation: move 4s ease infinite;
+  top: 7.5%;
+  left: 65%;
+  z-index: -2;
+}
+
+#cloud20 {
+  animation: move 5s ease infinite;
+  top: 7.5%;
+  left: 80%;
+  z-index: 2;
+}
+
+#cloud21 {
+  animation: move 6s ease infinite;
+  top: 7.5%;
+  left: 95%;
+  z-index: 2;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-17.5px);
+  }
 }
